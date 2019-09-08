@@ -6,25 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS CALCULATOR</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-	<div>
-		<p><input type='number' placeholder="0" id='n1'/></p>
-		<p><input type='number' placeholder="0" id='n2'/></p>
-	</div>
-<hr>
-<div class="buttons">
-    <button class="btn btn-secondary" onclick='plus()'>+</button>
-    <button class="btn btn-secondary" onclick='minus()'>-</button>
-    <button class="btn btn-secondary" onclick='division()'>/</button>
-    <button class="btn btn-secondary" onclick='multiplicate()'>*</button>
-</div>
+<div id="particles-js">
+    <div class="my-position">
+        <div class="my-inputs">
+            <p><input type='number' placeholder="0" id='n1'/></p>
+            <p><input type='number' placeholder="0" id='n2'/></p>
+        </div>
+        <hr>
+        <div class="buttons">
+            <button class="btn btn-secondary" onclick='plus()'>+</button>
+            <button class="btn btn-secondary" onclick='minus()'>-</button>
+            <button class="btn btn-secondary" onclick='division()'>/</button>
+            <button class="btn btn-secondary" onclick='multiplicate()'>*</button>
+        </div>
 
-<p class='result'>Результат: <span id="out"></span></p>
+        <p class='result'>=<span id="out">0</span></p>
+    </div>
 </div>
+<script src="particles.min.js" defer></script>
 <script src='script.js' defer></script>
+
 </body>
 </html>
